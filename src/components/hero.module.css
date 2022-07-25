@@ -14,7 +14,8 @@
     the viewport width
   */
   height: 61.8vh;
-  max-height: 560px;
+  max-height: 540px;
+  max-width: 640px;
   width: 100%;
 }
 

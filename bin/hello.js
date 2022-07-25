@@ -2,7 +2,6 @@ const chalk = require("chalk");
 const pkg = require("../package.json");
 
 console.log(`
-
 ${chalk.green("Hey there! 👋")}
 
 Thanks for giving the ${pkg.name} a try. 🎉
@@ -26,5 +25,4 @@ ${chalk.yellow(
 
 For further information check the readme of the project
 (https://github.com/contentful/starter-gatsby-blog)
-
 `);

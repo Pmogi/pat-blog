@@ -2,8 +2,7 @@ import React from 'react'
 
 const Container = ({ children, as = 'div' }) => {
   const Tag = as
-
-  return (
+    return (
     <Tag
       style={{
         maxWidth: 'var(--size-max-width)',
