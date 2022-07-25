@@ -30,15 +30,6 @@ class AboutMe extends React.Component {
                         {aboutMe.body?.raw && renderRichText(aboutMe.body)}
                     </div>
                 </div>
-                
-
-
-
-
-                {/* <body>
-                    {aboutMe.header}
-                    {renderRichText(aboutMe.body)}
-                </body> */}
             </Layout>
         )
     }
