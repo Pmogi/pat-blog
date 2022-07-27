@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer'
 import readingTime from 'reading-time'
+import { Disqus } from 'gatsby-plugin-disqus'
 
 import Seo from '../components/seo'
 import Layout from '../components/layout'
@@ -21,6 +22,7 @@ class BlogPostTemplate extends React.Component {
     )
     const plainTextBody = documentToPlainTextString(JSON.parse(post.body.raw))
     const { minutes: timeToRead } = readingTime(plainTextBody)
+
 
     return (
       <Layout location={this.props.location}>
@@ -65,6 +67,8 @@ class BlogPostTemplate extends React.Component {
                 </ul>
               </nav>
             )}
+            {/* Put in Disqus here */}
+            <Disqus />
           </div>
         </div>
       </Layout>

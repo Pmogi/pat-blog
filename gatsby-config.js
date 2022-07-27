@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sharp",
     "gatsby-plugin-image",
+    "gatsby-plugin-disqus",
     {
       resolve: "gatsby-source-contentful",
       options: {
@@ -19,6 +20,12 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         host: process.env.CONTENTFUL_HOST
       },
+    },
+    {
+      resolve: "gatsby-plugin-disqus",
+      options: {
+        shortname: `www-pmogi-com`
+      }
     },
   ],
 };
